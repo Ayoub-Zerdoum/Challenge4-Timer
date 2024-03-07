@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="./styles.css" />
+    </head>
+    <body>
+        <h1>Timer</h1>
+        <form>
+            <label>
+                Set the time :
+                <input id="inputTime" type="time" step="60" min="00:00" max="59:59" required>
+            </label>
+        </form>
+        <div id="timer">00:00</div>
+        <div class="btn_container">
+            <button id="start">
+                <span id="startText">START</span>
+                <span id="resumeText">RESUME</span>
+                <div id="circleG">
+                    <div id="circleG_1" class="circleG"></div>
+                    <div id="circleG_2" class="circleG"></div>
+                    <div id="circleG_3" class="circleG"></div>
+                </div>
+            </button>
+            <button id="stop">STOP</button>
+            <button id="reset">RESET</button>
+        </div>
+        <script src="timer.js"></script>
+    </body>
+</html>
